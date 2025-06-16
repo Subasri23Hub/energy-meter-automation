@@ -1,0 +1,17 @@
+Workflow: Automated Energy Meter Reading using Image Processing and IoT
+
+1. Image Acquisition:
+The system begins by capturing a real-time image of an energy meter using a camera module or by uploading a pre-stored image into the MATLAB environment. This image serves as the input for further analysis and processing.
+
+2. Image Preprocessing & Digit Extraction:
+Advanced image processing techniques are applied to the input image to enhance the visibility and readability of the numeric display. This includes grayscale conversion, noise reduction, adaptive thresholding, edge detection, and morphological operations. Optical Character Recognition (OCR) is then used to accurately extract the digit sequences from the processed image, representing the current energy consumption reading.
+
+3. Data Storage in Workspace:
+The extracted numerical data is stored as a matrix or string in the MATLAB workspace. This allows the reading to be accessed programmatically for further operations, including analysis, visualization, or cloud communication.
+
+4. Cloud Transmission via Simulink and ThingSpeak:
+A custom Simulink model is designed to interface with the ThingSpeak IoT platform. The Simulink block accesses the OCR output from the MATLAB workspace and transmits it to a configured ThingSpeak channel using its cloud communication modules. This step eliminates the need for physical microcontroller-based IoT hardware by using MATLAB and Simulink as virtual devices.
+
+5. Real-Time Monitoring on ThingSpeak:
+Once uploaded, the energy reading is visualized in real-time on the ThingSpeak dashboard. The platform provides dynamic charts and widgets to display the data stream, enabling remote monitoring, trend analysis, and further automation for energy management systems.
+
