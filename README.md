@@ -47,7 +47,7 @@ Below are sample visualizations generated on ThingSpeak, showcasing how the extr
 
 | Visualization Sample 1 | Visualization Sample 2 |
 |------------------------|------------------------|
-| ![Result 2](Result2.png) | ![Result 3](Result3.png) |
+| ![Result 2](Channel_Configurations.png) | ![Result 3](Cloud_Storage_Using_Thingspeak.png) |
 
 ##  Resources
 
